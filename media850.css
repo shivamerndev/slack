@@ -11,7 +11,7 @@
 @media (max-width: 450px) {
   nav {
     justify-content: space-between;
-    padding-left: 1rem;
+    padding-inline: 1rem;
   }
  
   .right i:nth-child(5) {
@@ -545,6 +545,7 @@
 
   .link>h1>i {
     font-size: 1.5rem;
+    display: block;
   }
 
   .link>p {
