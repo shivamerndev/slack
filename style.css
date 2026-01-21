@@ -1,0 +1,676 @@
+@font-face {
+  font-family: PP;
+  src: url(../public/PP.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PP, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.3rem 0;
+  margin-bottom: 2rem;
+}
+
+main {
+  min-height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.left img {
+  width: 6rem;
+  padding-top: 0.5rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-weight: 600;
+  color: rgb(65, 65, 65);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right h1 {
+  font-size: 0.99rem;
+  color: rgb(54, 54, 54);
+}
+
+.right i {
+  font-size: 1.5rem;
+}
+
+.right i:nth-child(5) {
+  display: none;
+}
+
+button {
+  background: #4a154b;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #4a154b;
+  border-radius: 0.2rem;
+  color: #4a154b;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.right:nth-child(2) {
+  font-size: 2rem;
+  color: black;
+}
+
+button:nth-child(3) {
+  background: white;
+}
+
+button:nth-child(4) {
+  color: white;
+}
+
+section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+  justify-content: center;
+}
+
+.uppertext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.uppertext h1 {
+  font-size: 3.3rem;
+}
+
+.uppertext h1 span {
+  color: #7001ca;
+}
+
+.uppertext button {
+  margin: 0 .5rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.logos img {
+  width: 2.5rem;
+}
+
+.vid1 {
+  width: 60%;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.vid1 video {
+  width: 100%;
+}
+
+.mt-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 50vh; */
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(#f9f1ff, #fff 90%);
+}
+
+.mt-8 h1 {
+  font-family: ui-serif;
+  width: 50%;
+  line-height: 2.9lh;
+  font-size: 3rem;
+}
+
+.-mt-8 {
+  width: 100%;
+  height: 8rem;
+  margin-top: -8rem;
+  clip-path: ellipse(60% 125% at 50% 170%);
+  background: #f9f0ff;
+  z-index: -8;
+}
+
+.uppertext button:nth-child(1) {
+  color: rgb(255, 255, 255);
+}
+
+.uppertext button:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+}
+
+.lowertext h1 {
+  font-size: 3rem;
+}
+
+.lowertext {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lowertext .svg-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.svg-text img {
+  width: 1.5rem;
+}
+
+section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.left-text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 40%;
+}
+
+.left-text h1 {
+  font-size: 2.2rem;
+}
+
+.left-text p {
+  font-size: 1.2rem;
+  color: rgb(64, 64, 64);
+}
+
+.right-vid {
+  width: 50%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.right-vid svg {
+  position: absolute;
+  top: 12%;
+  right: -12%;
+  /* rotate: 360deg; */
+  z-index: -1;
+}
+
+.right-vid video {
+  width: 100%;
+  height: 100%;
+}
+
+.lund {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lund h1 {
+  color: #7001ca;
+  font-size: 2.9rem;
+}
+
+section:nth-child(3) {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  background:
+    linear-gradient(#d1f1ff 0%, #e3edff 20%, #fbf4ff 55%, #fff 100%), #fff;
+  box-shadow: 1px 1px 1.5rem rgb(186, 186, 186);
+}
+
+.right-img {
+  width: 48%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.right-img img {
+  width: 100%;
+  height: 100%;
+}
+
+section:nth-child(4) {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section:nth-child(4) h1 {
+  font-family: ui-serif;
+  font-size: 3rem;
+  width: 60%;
+  text-align: center;
+}
+
+.flex-grow {
+  display: flex;
+  width: 70%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card {
+  overflow: hidden;
+  text-align: center;
+  align-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 10%;
+  flex-grow: 1;
+  height: 20rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.card:hover {
+  flex-grow: 5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.btns {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btns button:nth-child(1) {
+  color: white;
+  text-transform: capitalize;
+}
+
+.btns button:nth-child(2) {
+  background-color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.white-curve {
+  background-color: rgb(255, 255, 255);
+  clip-path: ellipse(65% 200% at 50% -105%);
+  height: 8rem;
+  margin-bottom: -8rem;
+}
+
+.curve-aubergine {
+  background: #4a154b;
+  height: 8rem;
+}
+
+/* .red-curve {
+  background-color: red;
+  margin-bottom: -8rem;
+  height: 8rem;
+  clip-path: ellipse(70% 200% at 50% -110%);
+} */
+section:nth-child(7) {
+  width: 100%;
+  height: 90vh;
+  background: #4a154b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+section:nth-child(7)>h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.clip-down {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.clip-down h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #c767ff;
+}
+
+.clip-down p {
+  width: 21ch;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+section:nth-child(8) {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(8)>h1 {
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+
+.dif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dif .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-right: 1px solid rgba(79, 79, 79, 0.607);
+}
+
+.left>div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.left>div>h1 {
+  font-size: 3rem;
+}
+
+.left>div>p {
+  width: 50%;
+}
+
+.dif .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dif .right>h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.dif .right>p {
+  font-size: 1.3rem;
+}
+
+.right>.imgs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.imgs>img {
+  height: 8rem;
+}
+
+section:nth-child(9) {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.crd {
+  width: 20%;
+  height: 100%;
+  background: rgba(237, 237, 237, 0.664);
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.669);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.crd img {
+  width: 100%;
+}
+
+.crd>button {
+  margin: 1rem;
+}
+
+.crd p {
+  padding: 1rem;
+}
+
+.crd h1 {
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.crd>button {
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 231);
+}
+
+pre {
+  font-size: 0.97rem;
+  color: rgb(67, 67, 67);
+}
+
+.ftop {
+  background: #4a154b;
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  clip-path: ellipse(60% 90% at 50% 0%);
+  margin-top: 4rem;
+}
+
+.ftop>h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.ftop button:nth-child(1) {
+  background: white;
+  margin-right: 16px;
+}
+
+.ftop button:nth-child(2) {
+  color: white;
+  border: 2px solid #eee;
+}
+
+.socials {
+  display: flex;
+  width: 80%;
+  height: 20vh;
+  align-items: center;
+  border-bottom: 1px solid rgb(183, 183, 183);
+  margin: auto;
+  justify-content: space-between;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icons>i {
+  font-size: 1.3rem;
+}
+
+.fbottom {
+  padding-top: 4rem;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+  border-bottom: 1px solid black;
+  /* background: gray; */
+}
+
+.grid-links {
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100%;
+}
+
+.link>h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.link>p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: rgb(95, 95, 95);
+}
+
+.link>p:hover{
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.link-mt {
+  margin-top: 2rem;
+}
+
+.vid1 img {
+  display: none;
+}
+
+.lund2 {
+  display: none;
+}
+
+.link>h1>i {
+  display: none;
+}
+
+.logos2 {
+  display: none;
+}
